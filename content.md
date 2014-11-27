@@ -26,10 +26,11 @@ Here's a list of pages that uses Cuba for inspiration:
 
 # 2. Assumptions
 
-This book is intended for everyone who wants to get started with Cuba.
+This book is intended for anyone who wants to get started with Cuba.
 It's recommended to have some basic knowledge of the Ruby programming
-language. If this is the first time you hear about Ruby, we encourage
-you to take this tutorial to get up to speed: <http://tryruby.org/>.
+language. If you're unfamiliar with Ruby, or would like a refresher,
+we encourage you to take this tutorial to get up to speed:
+<http://tryruby.org/>.
 
 In order to try out the examples of the book, you need to have some
 prerequisites installed:
@@ -66,16 +67,16 @@ must be executed in this directory.
 
 # 4. Up and Running
 
-This first chapter focuses on the bare minimum you need to know to work
-with Cuba. We'll learn some of the core concepts walking through the
-creation of the classical "Hello World" application.
+This first chapter focuses on the bare minimum you need to know to
+work with Cuba. We'll learn some of the core concepts and walk through
+the creation of the classical "Hello World" application.
 
 ## 4.1. What's Cuba?
 
-Cuba is one of the lightest option when it comes to web development
+Cuba is one of the lightest options when it comes to web development
 in Ruby. Here are some core attributes that are worth mentioning:
 
-* It's incredibly small, 174 lines of code. This simplicity by design
+* It's incredibly small, 289 lines of code. This simplicity by design
   makes Cuba easy to understand and debug, and very stable (no major
   changes since 2012).
 
@@ -99,8 +100,8 @@ $ gem install cuba
 ```
 
 Now that Cuba is installed, it's easy to create an application. Open
-your text editor of preference and create a file called `app.rb` with
-the following code:
+your preferred text editor and create a file called `app.rb` with the
+following code:
 
 ```ruby
 require "cuba"
@@ -207,7 +208,7 @@ You can read more about Rack visiting their home page:
 
 # 5. Managing Dependencies
 
-In every web application, there are common tasks that you need to do
+In every web application, there are common tasks that you need to perform
 (e.g authenticate users or query a database). Libraries are useful for
 not reinventing the wheel, and in Ruby they are often referred to as
 *gems*.
@@ -227,9 +228,9 @@ of each one. This is where tools like [gs](https://github.com/soveran/gs) and
 
 ## 5.1. gs
 
-With gs you can create a *gemset* for each project. A gemset is an isolated
-space to install gems. By providing each project with their own gemset, you
-can be sure that the right version of a gem is loaded.
+With gs you can create a *gemset* for each project. A gemset is an
+isolated space to install gems. By providing each project with its own
+gemset, you can be sure that the right version of a gem is loaded.
 
 To install gs, do:
 
@@ -252,7 +253,7 @@ Now that we created a gemset, you will use *dep* to keep track of the project
 dependencies.
 
 dep uses a `.gems` file to list the required gems with their version
-number. This file will be created automotically the first time you add a
+number. This file will be created automatically the first time you add a
 gem to the list.
 
 To add Cuba to this list, use:
@@ -262,7 +263,7 @@ $ dep add cuba
 ```
 
 This fetches the latest version of the gem and adds it to yours `.gems` file.
-Let's have a look at what the file looks like after adding the Cuba gem:
+Let's see what the file looks like after adding the Cuba gem:
 
 ```no-highlight
 cuba -v 3.3.0
@@ -303,9 +304,9 @@ end
 ```
 
 This approach can get very messy, especially when you need to generate content
-dinamically (e.g. a user's timeline), or parts of the HTML are repeated on every
+dynamically (e.g. a user's timeline), or parts of the HTML are repeated on every
 page (e.g. a navigation menu). Therefore we separate it into *views*, which are
-template files that gets converted to HTML and sent back to the browser.
+template files that get converted to HTML and sent back to the browser.
 
 In this chapter, you'll learn how to use [mote](https://github.com/soveran/mote),
 a minimal template engine to render views.
