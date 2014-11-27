@@ -76,9 +76,9 @@ the creation of the classical "Hello World" application.
 Cuba is one of the lightest options when it comes to web development
 in Ruby. Here are some core attributes that are worth mentioning:
 
-* It's incredibly small, 289 lines of code. This simplicity by design
-  makes Cuba easy to understand and debug, and very stable (no major
-  changes since 2012).
+* It's incredibly small, less than 200 lines of code. This simplicity
+  by design makes Cuba easy to understand and debug, and very stable
+  (no major changes since 2012).
 
 * Like most web frameworks in Ruby, Cuba is built on top of Rack, a Ruby
   webserver interface. Because of this, we have the benefits of existing
