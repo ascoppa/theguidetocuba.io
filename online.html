@@ -111,10 +111,11 @@ you achieve more flexibility, less complexity and maintainable code.</p>
 
 <h1 id="2.-assumptions">2. Assumptions</h1>
 
-<p>This book is intended for everyone who wants to get started with Cuba.
+<p>This book is intended for anyone who wants to get started with Cuba.
 It&#39;s recommended to have some basic knowledge of the Ruby programming
-language. If this is the first time you hear about Ruby, we encourage
-you to take this tutorial to get up to speed: <a href="http://tryruby.org/">http://tryruby.org/</a>.</p>
+language. If you&#39;re unfamiliar with Ruby, or would like a refresher,
+we encourage you to take this tutorial to get up to speed:
+<a href="http://tryruby.org/">http://tryruby.org/</a>.</p>
 
 <p>In order to try out the examples of the book, you need to have some
 prerequisites installed:</p>
@@ -152,17 +153,17 @@ must be executed in this directory.</p>
 
 <h1 id="4.-up-and-running">4. Up and Running</h1>
 
-<p>This first chapter focuses on the bare minimum you need to know to work
-with Cuba. We&#39;ll learn some of the core concepts walking through the
-creation of the classical &quot;Hello World&quot; application.</p>
+<p>This first chapter focuses on the bare minimum you need to know to
+work with Cuba. We&#39;ll learn some of the core concepts and walk through
+the creation of the classical &quot;Hello World&quot; application.</p>
 
 <h2 id="4.1.-what&#39;s-cuba?">4.1. What&#39;s Cuba?</h2>
 
-<p>Cuba is one of the lightest option when it comes to web development
+<p>Cuba is one of the lightest options when it comes to web development
 in Ruby. Here are some core attributes that are worth mentioning:</p>
 
 <ul>
-<li><p>It&#39;s incredibly small, 174 lines of code. This simplicity by design
+<li><p>It&#39;s incredibly small, 289 lines of code. This simplicity by design
 makes Cuba easy to understand and debug, and very stable (no major
 changes since 2012).</p></li>
 <li><p>Like most web frameworks in Ruby, Cuba is built on top of Rack, a Ruby
@@ -183,8 +184,8 @@ will introduce other libraries that share the same design philosophy.</p></li>
 </code></pre>
 
 <p>Now that Cuba is installed, it&#39;s easy to create an application. Open
-your text editor of preference and create a file called <code>app.rb</code> with
-the following code:</p>
+your preferred text editor and create a file called <code>app.rb</code> with the
+following code:</p>
 
 <pre><code class="ruby">require &quot;cuba&quot;
 
@@ -286,7 +287,7 @@ by default.</p>
 
 <h1 id="5.-managing-dependencies">5. Managing Dependencies</h1>
 
-<p>In every web application, there are common tasks that you need to do
+<p>In every web application, there are common tasks that you need to perform
 (e.g authenticate users or query a database). Libraries are useful for
 not reinventing the wheel, and in Ruby they are often referred to as
 <em>gems</em>.</p>
@@ -306,9 +307,9 @@ of each one. This is where tools like <a href="https://github.com/soveran/gs">gs
 
 <h2 id="5.1.-gs">5.1. gs</h2>
 
-<p>With gs you can create a <em>gemset</em> for each project. A gemset is an isolated
-space to install gems. By providing each project with their own gemset, you
-can be sure that the right version of a gem is loaded.</p>
+<p>With gs you can create a <em>gemset</em> for each project. A gemset is an
+isolated space to install gems. By providing each project with its own
+gemset, you can be sure that the right version of a gem is loaded.</p>
 
 <p>To install gs, do:</p>
 
@@ -329,7 +330,7 @@ session, all gems will be installed locally in the <code>.gs</code> folder.</p>
 dependencies.</p>
 
 <p>dep uses a <code>.gems</code> file to list the required gems with their version
-number. This file will be created automotically the first time you add a
+number. This file will be created automatically the first time you add a
 gem to the list.</p>
 
 <p>To add Cuba to this list, use:</p>
@@ -338,7 +339,7 @@ gem to the list.</p>
 </code></pre>
 
 <p>This fetches the latest version of the gem and adds it to yours <code>.gems</code> file.
-Let&#39;s have a look at what the file looks like after adding the Cuba gem:</p>
+Let&#39;s see what the file looks like after adding the Cuba gem:</p>
 
 <pre><code class="no-highlight">cuba -v 3.3.0
 </code></pre>
@@ -375,9 +376,9 @@ end
 </code></pre>
 
 <p>This approach can get very messy, especially when you need to generate content
-dinamically (e.g. a user&#39;s timeline), or parts of the HTML are repeated on every
+dynamically (e.g. a user&#39;s timeline), or parts of the HTML are repeated on every
 page (e.g. a navigation menu). Therefore we separate it into <em>views</em>, which are
-template files that gets converted to HTML and sent back to the browser.</p>
+template files that get converted to HTML and sent back to the browser.</p>
 
 <p>In this chapter, you&#39;ll learn how to use <a href="https://github.com/soveran/mote">mote</a>,
 a minimal template engine to render views.</p>
