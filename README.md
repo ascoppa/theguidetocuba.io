@@ -11,6 +11,10 @@ We'll teach you how to use Cuba together will small and simple Ruby libraries
 to customize your stack. By applying this minimalist philosophy you achieve
 more flexibility, less complexity and maintainable code.
 
+This book is a work in progress and is licensed under the
+[CC BY-NC-SA 4.0 license][license].
+
 [code]: https://github.com/soveran/cuba
 [cuba]: http://cuba.is
+[license]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [soveran]: https://github.com/soveran
