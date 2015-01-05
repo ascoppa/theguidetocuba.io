@@ -46,18 +46,6 @@ h1, h2, h3  {
   color: #444;
 }
 
-#gittip {
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  color: lightgray;
-  font-size: 2em;
-}
-
-#gittip:hover, #gittip:active {
-  color: #666;
-}
-
 p {
   line-height: 1.6em;
 }
