@@ -1,5 +1,5 @@
 clone:
-	git clone git@github.com:harmoni-io/theguidetocuba.io.git -b gh-pages website
+	git clone git@github.com:harmoni/theguidetocuba.io.git -b gh-pages website
 
 build:
 	./bin/site ./content/book.md > ./website/online.html
