@@ -7,7 +7,7 @@ scratch using [Cuba][cuba]. Cuba is a micro framework written by Michel Martens
 code [here][code].
 
 Some Ruby frameworks can be bloated and offer functionality you don't need.
-We'll teach you how to use Cuba together will small and simple Ruby libraries
+We'll teach you how to use Cuba together with small and simple Ruby libraries
 to customize your stack. By applying this minimalist philosophy you achieve
 more flexibility, less complexity and maintainable code.
 
